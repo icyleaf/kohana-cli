@@ -8,7 +8,7 @@ Terminal Module is a tools like [rails](http://rubyonrails.org/) 'script/generat
 
 * Linux ONLY
 * PHP 5.2+
-* [Kohana](http://github.com/kohana/kohana)/gravatar/)
+* [Kohana](http://github.com/kohana/kohana)
 
 ## TODO
 
