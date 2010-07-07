@@ -2,6 +2,8 @@
 
 Terminal Module is a tools like [rails](http://rubyonrails.org/) 'script/generate'. (development)
 
+![screenshot](http://github.com/icyleaf/terminal/raw/master/screenshot1.png)
+
 ## Requirements
 
 * Linux ONLY
