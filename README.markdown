@@ -11,7 +11,7 @@ Terminal Module is a tools like [rails](http://rubyonrails.org/) 'script/generat
 
 ## Install
 
-Move the file named 'kohana' to Kohana application root path.
+Move the file named 'kohana' to Kohana application root path with `index.php` together.
 
 ## TODO
 
