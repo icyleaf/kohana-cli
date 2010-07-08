@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 /**
- * Terminal Tools for Kohana v3
+ * Generate Controller class
  *
  * @category Terminal
  * @author   icyleaf <icyleaf.cn@gmail.com>
