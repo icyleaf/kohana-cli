@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Kohana Terminal Tools
+#
+# @author     icyleaf <icyleaf.cn@gmail.com>
+# @link       http://icyleaf.com
+#
+# Usage (point your kohana path):
+#
+#           .-------------------------------------------------- Kohana Terminal Tools
+#           |
+#           |        .----------------------------------------- Tools action(controller/model/view etc)
+#           |        |
+#           |        |           .----------------------------- File name (Directory(/SubDirectory)/File)
+#           |        |           |
+#           |        |           |           .----.------.----- Methods aame
+#           |        |           |           |    |      |
+#           |        |           |           |    |      |
+#           |        |           |           |    |      |
+#       ./kohana controller template/people get update delete
+echo "=> kohana terminal tools for development"
+php index.php --uri=kohana_terminal/index $@
