@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 /**
- * Generate Modelana v3
+ * Generate Model class
  *
  * @category Terminal
  * @author   icyleaf <icyleaf.cn@gmail.com>
@@ -40,14 +40,14 @@ class Kohana_Terminal_Model extends Terminal {
 		$files_count = count($files);
 
 		// Progress controller directory
-		$controller = array('Model');
+		$model = array('Model');
 		$directory = NULL;
 		if ($files_count > 1)
 		{
 			// progress controller name
 			for ($i = 0; $i < $files_count; $i++)
 			{
-				$controller[] = $this->_format_name($files[$i]);
+				$model[] = $this->_format_name($files[$i]);
 
 				if ($i != ($files_count -1))
 				{
@@ -59,11 +59,11 @@ class Kohana_Terminal_Model extends Terminal {
 		}
 		else
 		{
-			$controller[] = $this->_format_name($filename);
+			$model[] = $this->_format_name($filename);
 		}
 
 		// Set the name of controller file
-		$controller = implode('_', $controller);
+		$model = implode('_', $model);
 
 		// Set controller extends
 		if ($extends)
@@ -106,7 +106,7 @@ class Kohana_Terminal_Model extends Terminal {
 			chmod($filename, 0666);
 
 			// Continute to write
-			file_put_contents($filename, PHP_EOL.'class '.ucfirst($controller).' extends '.$extends.' {', FILE_APPEND);
+			file_put_contents($filename, PHP_EOL.'class '.ucfirst($model).' extends '.$extends.' {', FILE_APPEND);
 
 			file_put_contents($filename, PHP_EOL.PHP_EOL.'}'.PHP_EOL.PHP_EOL, FILE_APPEND);
 

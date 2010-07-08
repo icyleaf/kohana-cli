@@ -15,7 +15,6 @@ Move the file named 'kohana' to Kohana application root path.
 
 ## TODO
 
-* Create View 
 * Added the new method to exist controller
 * Support params of methods in controller
 * (Think more about it)
@@ -25,6 +24,8 @@ Move the file named 'kohana' to Kohana application root path.
 * Create Controller (support multi-methods)
 * Create Controller (support extend, like Template, REST, etc)
 * Create Model (support extend, like ORM, Sprig)
+* Create View
+* Generate all of MVC files
 
 ## Usage
 
@@ -34,8 +35,20 @@ Controller: classes/controller/home/template.php
 
 Controller extends REST: classes/controller/api/user.php
 
-     ./kohana controller api/user index update delete --e=rest
+     #   **create**  APPPATH/classes/controller/api/user.php
+
+     ./kohana controller api/user index update delete --i=rest
 
 Model extends ORM: classes/model/user.php
 
+     #   **create**  APPPATH/classes/model/user.php
+
      ./kohana model user --e=orm
+
+Generate all of MVC files:
+
+     #   **create**  APPPATH/classes/controller/topic.php
+     #   **create**  APPPATH/classes/model/topic.php
+     #   **create**  APPPATH/view/topic.php
+
+     ./kohana controller topic list view update delete --i=template --e=orm --a

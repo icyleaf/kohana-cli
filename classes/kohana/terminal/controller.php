@@ -17,12 +17,14 @@ class Kohana_Terminal_Controller extends Terminal {
 
 		if ($argc > 0)
 		{
-			$extends = CLI::options('e');
-			$extends = Arr::get($extends, 'e');
+			$extends = CLI::options('i');
+			$extends = Arr::get($extends, 'i');
+
+			$generate_all = CLI::options('i');
 
 			for ($i = 0; $i < $argc; $i++)
 			{
-				if (strpos($argv[$i], '--e') !== FALSE)
+				if (strpos($argv[$i], '--') !== FALSE)
 				{
 					unset($argv[$i]);
 				}
@@ -32,6 +34,12 @@ class Kohana_Terminal_Controller extends Terminal {
 			$methods = array_slice($argv, 1);
 
 			$this->generate($filename, $methods, $extends);
+
+			if ($generate_all)
+			{
+				new Terminal_Model();
+				new Terminal_View();
+			}
 		}
 		else
 		{
