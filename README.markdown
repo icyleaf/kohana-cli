@@ -21,11 +21,16 @@ Move the file named 'kohana' to Kohana application root path.
 ## Done
 
 * Create Controller (support multi-methods)
-
-     // Controller: classes/controller/home/template.php
-     ./kohana controller home/template before index after
-
 * Create Controller (support extend, like Template, REST, etc)
 
-     // REST Controller: classes/controller/api/user.php
+
+
+## Usage
+
+Controller: classes/controller/home/template.php
+
+     ./kohana controller home/template before index after
+
+REST Controller: classes/controller/api/user.php
+
      ./kohana controller api/user index update delete --e=rest
