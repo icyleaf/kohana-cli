@@ -11,7 +11,8 @@ Terminal Module is a tools like [rails](http://rubyonrails.org/) 'script/generat
 
 ## Install
 
-Move the file named 'kohana' to Kohana application root path with `index.php` together.
+1. Move the file named 'kohana' to Kohana base path with `index.php` together.
+2. Change file mode bits: `chmod 755 kohana`
 
 ## TODO
 
@@ -30,6 +31,8 @@ Move the file named 'kohana' to Kohana application root path with `index.php` to
 ## Usage
 
 Controller: classes/controller/home/template.php
+
+     #   **create**  APPPATH/classes/controller/home/template.php
 
      ./kohana controller home/template before index after
 
